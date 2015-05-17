@@ -42,7 +42,7 @@ for line in open(FILE).readlines():
 countries = sorted(countries.items(), key=operator.itemgetter(1), reverse=True)
 width = 0.3
 fig, ax = plt.subplots()
-ax.set_title('Number of SSH login attempts per Country')
+ax.set_title('Number of SSH login attempts per country')
 ind = range(0, len(countries))
 data = [entry[1] for entry in countries]
 ax.set_xticks([offset + width for offset in ind])
